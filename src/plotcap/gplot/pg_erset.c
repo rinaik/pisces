@@ -158,11 +158,11 @@ pg_erset(rot, eno, sval, ival, syseno)
 		}
 
 	if (syseno != 0) {
-#ifndef unix
+//#ifndef unix
 		perror("\t") ;
-#else
-		pr(stderr," [%s]", sys_errlist[syseno] ) ;
-#endif
+//#else
+		//pr(stderr," [%s]", sys_errlist[syseno] ) ;
+//#endif
 		}
 
 	pr(stderr,  "\n") ;
